@@ -1,0 +1,139 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #1E90FF; /* Dodger blue for text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+  padding: 12px 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar-link {
+  color: #1E90FF;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  background-color: rgba(30, 144, 255, 0.15);
+  font-weight: 600;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #111;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+.titles p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.separator {
+  height: 1px;
+  background: #333;
+  margin: 15px 0;
+}
+
+.contacts-list,
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #1E90FF;
+}
+
+.contact-item ion-icon {
+  font-size: 1.2rem;
+  color: #1E90FF;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-list a {
+  color: #ccc;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-list a:hover {
+  color: #1E90FF;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1E90FF;
+}
+
+.main-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #ccc;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arshi Bansal | Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="navbar">
+    <nav>
+      <ul class="navbar-list">
+        <li><a href="#" class="navbar-link active">About</a></li>
+        <li><a href="#" class="navbar-link">Education</a></li>
+        <li><a href="#" class="navbar-link">Portfolio</a></li>
+        <li><a href="#" class="navbar-link">Projects</a></li>
+        <li><a href="#" class="navbar-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <h1 class="name">Arshi Bansal</h1>
+        <div class="titles">
+          <p>Data Analyst</p>
+          <p>AI/ML Engineer</p>
+        </div>
+
+        <div class="sidebar-info-more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>arshi122022@gmail.com</span>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>September 30, 2004</span>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>Jalandhar, Punjab, India</span>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li><a href="https://github.com/" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <h1>About Me</h1>
+      <p>I'm a Data Analyst based in Jalandhar, India, turning data into insights using tools like Python, Pandas, and machine learning models.</p>
+      <p>I clean, explore, and visualize datasets to build dashboards and predictive models that solve real-world problems.</p>
+    </main>
+  </div>
+
+  <!-- JS to switch active nav link -->
+  <script>
+    const links = document.querySelectorAll('.navbar-link');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        links.forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
