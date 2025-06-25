@@ -238,6 +238,31 @@ body {
   margin-bottom: 5px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #111;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #ccc;
+}
+
+.card h2 {
+  color: #1E90FF;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
   .page-wrapper {
