@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0a0a0a;
-  color: #1E90FF; /* Dodger blue for text */
+  color: #1E90FF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@ body {
   border-radius: 16px;
   padding: 25px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  height: fit-content;
+  height: 500px;
 }
 
 .name {
@@ -136,4 +136,116 @@ body {
   line-height: 1.6;
   margin-bottom: 10px;
   color: #ccc;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* WORK GRID */
+.work-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.work-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+}
+
+.work-card ion-icon {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+.work-card h3 {
+  font-size: 1.1rem;
+  color: #1E90FF;
+  margin-bottom: 8px;
+}
+
+.work-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* EDUCATION TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  border-left: 3px solid #1E90FF;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #1E90FF;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timeline-item h3 {
+  color: #1E90FF;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.timeline-item p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
 }
