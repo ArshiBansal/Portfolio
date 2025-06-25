@@ -25,7 +25,7 @@
       <ul class="navbar-list">
         <li><a href="#about" class="navbar-link active" data-target="about">About</a></li>
         <li><a href="#education" class="navbar-link" data-target="education">Education</a></li>
-        <li><a href="#portfolio" class="navbar-link" data-target="portfolio">Portfolio</a></li>
+        <li><a href="#portfolio" class="navbar-link" data-target="portfolio">Tech Stack</a></li>
         <li><a href="#projects" class="navbar-link" data-target="projects">Projects</a></li>
         <li><a href="#contact" class="navbar-link" data-target="contact">Contact</a></li>
       </ul>
@@ -75,10 +75,10 @@
         <h1>About Me</h1>
         <div class="about-section">
           <p>
-            Currently in my third year of B.Tech, I am actively building skills and experience in the fields of artificial intelligence, machine learning, and data analytics. I focus on developing predictive models and solving real-world problems using Python, Pandas, and SQL. I'm also proficient in using Power BI to design clean and insightful dashboards that visualize complex data with clarity. My passion lies in understanding how data can drive smart decisions, and I enjoy working on projects that blend technology with practical use cases. At the same time, I’m developing a strong grasp of frontend web development using HTML, CSS, and JavaScript to bring ideas to life through engaging and responsive user interfaces.
+            Currently in my third year of B.Tech, I am actively building skills and experience in the fields of artificial intelligence, machine learning, and data analytics. I focus on developing predictive models and solving real-world problems using Python, Pandas, and SQL. I'm also proficient in using Power BI to design clean and insightful dashboards that visualize complex data with clarity.
           </p>
           <p>
-            As part of my growth, I’m currently learning Java to strengthen my backend logic and object-oriented programming skills. I believe in continuous learning and regularly challenge myself through hands-on projects and collaboration. Whether working solo or with friends, I find joy in brainstorming ideas, building functional solutions, and pushing my creative limits. I enjoy the process of learning from each experience—be it a small bug fix or a complete end-to-end project. From designing dashboards to writing code, I value clean structure, thoughtful design, and a mindset of curiosity. I'm always exploring new technologies and look forward to building innovative, user-focused solutions in the tech world.
+            I’m developing a strong grasp of frontend web development using HTML, CSS, and JavaScript to bring ideas to life. I’m learning Java to strengthen backend logic and OOP. I value clean structure, thoughtful design, and creativity.
           </p>
         </div>
 
@@ -131,14 +131,12 @@
       <section id="education" class="section">
         <h1>Education</h1>
         <div class="timeline">
-          
           <div class="timeline-item">
             <span class="timeline-date">August 2023 – Present</span>
             <h3>B.Tech in Computer Science and Engineering</h3>
             <p>Lovely Professional University, Phagwara, Punjab, India</p>
           </div>
-        </div>
-        <div class="timeline-item">
+          <div class="timeline-item">
             <span class="timeline-date">April 2021 – March 2023</span>
             <h3>Higher Secondary Education</h3>
             <p>Innocent Hearts School, Jalandhar, Punjab, India</p>
@@ -149,12 +147,22 @@
             <p>Cambridge International School for Girls, Jalandhar, Punjab, India</p>
             <p>Percentage: 95%</p>
           </div>
+        </div>
       </section>
 
-      <!-- PORTFOLIO -->
+      <!-- PORTFOLIO (Tech Stack) -->
       <section id="portfolio" class="section">
-        <h1>Portfolio</h1>
-        <p>Coming soon...</p>
+        <h1>Tech Stack</h1>
+        <div class="grid">
+          <div class="card"><h2>Programming</h2><ul><li>C</li><li>C++</li><li>Python</li><li>Java</li></ul></div>
+          <div class="card"><h2>Frontend Development</h2><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li><li>React</li><li>Tailwind CSS</li></ul></div>
+          <div class="card"><h2>Database</h2><ul><li>MySQL</li><li>PostgreSQL</li></ul></div>
+          <div class="card"><h2>Data Analytics</h2><ul><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>Jupyter Notebook</li></ul></div>
+          <div class="card"><h2>Machine Learning</h2><ul><li>Scikit-learn</li><li>TensorFlow</li><li>StreamLit</li><li>NLTK</li><li>spaCy</li></ul></div>
+          <div class="card"><h2>Tools & Platforms</h2><ul><li>Git & GitHub</li><li>VS Code</li><li>Power BI Desktop</li><li>Windows</li></ul></div>
+          <div class="card"><h2>Version Control</h2><ul><li>Git</li><li>GitHub</li></ul></div>
+          <div class="card"><h2>Scripting</h2><ul><li>Linux</li><li>Bash</li></ul></div>
+        </div>
       </section>
 
       <!-- PROJECTS -->
@@ -175,7 +183,6 @@
   <script>
     const links = document.querySelectorAll('.navbar-link');
     const sections = document.querySelectorAll('.section');
-
     links.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
