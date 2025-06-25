@@ -11,18 +11,23 @@
   <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
 </head>
 <body>
 
-  <!-- TOP NAVBAR -->
+  <!-- NAVBAR -->
   <header class="navbar">
     <nav>
       <ul class="navbar-list">
-        <li><a href="#" class="navbar-link active">About</a></li>
-        <li><a href="#" class="navbar-link">Education</a></li>
-        <li><a href="#" class="navbar-link">Portfolio</a></li>
-        <li><a href="#" class="navbar-link">Projects</a></li>
-        <li><a href="#" class="navbar-link">Contact</a></li>
+        <li><a href="#about" class="navbar-link active" data-target="about">About</a></li>
+        <li><a href="#education" class="navbar-link" data-target="education">Education</a></li>
+        <li><a href="#portfolio" class="navbar-link" data-target="portfolio">Portfolio</a></li>
+        <li><a href="#projects" class="navbar-link" data-target="projects">Projects</a></li>
+        <li><a href="#contact" class="navbar-link" data-target="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -36,7 +41,6 @@
           <p>Data Analyst</p>
           <p>AI/ML Engineer</p>
         </div>
-
         <div class="sidebar-info-more">
           <div class="separator"></div>
           <ul class="contacts-list">
@@ -65,19 +69,121 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      <h1>About Me</h1>
-      <p>I'm a Data Analyst based in Jalandhar, India, turning data into insights using tools like Python, Pandas, and machine learning models.</p>
-      <p>I clean, explore, and visualize datasets to build dashboards and predictive models that solve real-world problems.</p>
+      
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section active">
+        <h1>About Me</h1>
+        <div class="about-section">
+          <p>
+            Currently in my third year of B.Tech, I am actively building skills and experience in the fields of artificial intelligence, machine learning, and data analytics. I focus on developing predictive models and solving real-world problems using Python, Pandas, and SQL. I'm also proficient in using Power BI to design clean and insightful dashboards that visualize complex data with clarity. My passion lies in understanding how data can drive smart decisions, and I enjoy working on projects that blend technology with practical use cases. At the same time, I’m developing a strong grasp of frontend web development using HTML, CSS, and JavaScript to bring ideas to life through engaging and responsive user interfaces.
+          </p>
+          <p>
+            As part of my growth, I’m currently learning Java to strengthen my backend logic and object-oriented programming skills. I believe in continuous learning and regularly challenge myself through hands-on projects and collaboration. Whether working solo or with friends, I find joy in brainstorming ideas, building functional solutions, and pushing my creative limits. I enjoy the process of learning from each experience—be it a small bug fix or a complete end-to-end project. From designing dashboards to writing code, I value clean structure, thoughtful design, and a mindset of curiosity. I'm always exploring new technologies and look forward to building innovative, user-focused solutions in the tech world.
+          </p>
+        </div>
+
+        <h2 style="margin-top: 30px; color: #1E90FF;">My Works</h2>
+        <div class="work-grid">
+          <div class="work-card">
+            <ion-icon name="analytics-outline"></ion-icon>
+            <h3>Dashboard Designing</h3>
+            <p>Modern and professional dashboards created using Power BI to derive actionable insights.</p>
+          </div>
+          <div class="work-card">
+            <ion-icon name="filter-outline"></ion-icon>
+            <h3>Data Cleaning</h3>
+            <p>Transforming messy data into clean datasets using Excel and Python for accurate analysis.</p>
+          </div>
+          <div class="work-card">
+            <ion-icon name="construct-outline"></ion-icon>
+            <h3>Problem Solving</h3>
+            <p>Working on real-life challenges to enhance logical thinking and efficient coding practices.</p>
+          </div>
+          <div class="work-card">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Frontend Development</h3>
+            <p>Creating responsive and attractive UIs using HTML, CSS, and JavaScript frameworks.</p>
+          </div>
+          <div class="work-card">
+            <ion-icon name="sparkles-outline"></ion-icon>
+            <h3>Predictive Modeling</h3>
+            <p>Training ML models to forecast trends and build data-driven solutions for various domains.</p>
+          </div>
+          <div class="work-card">
+            <ion-icon name="desktop-outline"></ion-icon>
+            <h3>GUI Development</h3>
+            <p>Developing desktop applications with Java Swing for interactive user experience.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 30px; color: #1E90FF;">My Skills</h2>
+        <ul style="color: #ccc; margin-top: 15px; line-height: 1.7;">
+          <li>Data Science: Python, Pandas, Numpy, Power BI, Excel, SQL</li>
+          <li>Predictive Modeling: Scikit-learn, Regression, Classification, Clustering</li>
+          <li>Frontend Development: HTML, CSS, JavaScript</li>
+          <li>Backend Logic (Learning): Java and OOPs concepts</li>
+          <li>Data Cleaning, Visualization & Dashboard Design</li>
+          <li>Team Projects, Collaboration & Solo Development Experience</li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="section">
+        <h1>Education</h1>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <span class="timeline-date">August 2023 – Present</span>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>Lovely Professional University, Phagwara, Punjab, India</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-date">April 2021 – March 2023</span>
+            <h3>Higher Secondary Education</h3>
+            <p>Innocent Hearts School, Jalandhar, Punjab, India</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">April 2009 – March 2021</span>
+            <h3>Secondary Education</h3>
+            <p>Cambridge International School for Girls, Jalandhar, Punjab, India</p>
+            <p>Percentage: 95%</p>
+          </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="section">
+        <h1>Portfolio</h1>
+        <p>Coming soon...</p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h1>Projects</h1>
+        <p>Coming soon...</p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h1>Contact</h1>
+        <p>Coming soon...</p>
+      </section>
     </main>
   </div>
 
-  <!-- JS to switch active nav link -->
+  <!-- JS TOGGLE SECTIONS -->
   <script>
     const links = document.querySelectorAll('.navbar-link');
+    const sections = document.querySelectorAll('.section');
+
     links.forEach(link => {
-      link.addEventListener('click', () => {
-        links.forEach(el => el.classList.remove('active'));
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        links.forEach(l => l.classList.remove('active'));
         link.classList.add('active');
+        const target = link.getAttribute('data-target');
+        sections.forEach(section => section.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
       });
     });
   </script>
