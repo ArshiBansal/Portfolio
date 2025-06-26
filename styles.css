@@ -263,6 +263,62 @@ body {
   line-height: 1.6;
 }
 
+/* PROJECTS SECTION */
+.subsection-title {
+  font-size: 1.3rem;
+  color: #1E90FF;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(30, 144, 255, 0.2);
+}
+
+.project-card ion-icon {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  color: #1E90FF;
+  margin-bottom: 6px;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.contact-form { max-width: 500px; margin: 20px auto; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; color: #ccc; }
+.form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #333; border-radius: 5px; background: #222; color: #fff; }
+.submit-button { padding: 10px 20px; background: #1E90FF; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+.submit-button:hover { background: #104E8B; }
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
   .page-wrapper {
