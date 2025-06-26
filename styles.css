@@ -312,12 +312,79 @@ body {
   line-height: 1.5;
 }
 
-.contact-form { max-width: 500px; margin: 20px auto; }
-.form-group { margin-bottom: 15px; }
-.form-group label { display: block; margin-bottom: 5px; color: #ccc; }
-.form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #333; border-radius: 5px; background: #222; color: #fff; }
-.submit-button { padding: 10px 20px; background: #1E90FF; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
-.submit-button:hover { background: #104E8B; }
+/* CONTACT FORM */
+.form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1E90FF;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+.form-input::placeholder {
+  color: #666;
+}
+
+.form-input[type="text"],
+.form-input[type="email"] {
+  height: 40px;
+}
+
+textarea.form-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-btn:hover {
+  background: #104E8B;
+}
+
+.form-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.form-btn ion-icon {
+  font-size: 1.2rem;
+}
 
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
@@ -328,5 +395,9 @@ body {
   .sidebar {
     width: 100%;
     height: auto;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
   }
 }
