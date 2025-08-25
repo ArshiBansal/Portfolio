@@ -1,6 +1,11 @@
 /* Keep original inline style here too for completeness */
-.section { display: none; }
-.section.active { display: block; }
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
 
 /* RESET & BASE */
 * {
@@ -271,7 +276,8 @@ body {
 /* === PROJECTS SECTION === */
 #projects {
   padding: 0 20px 60px 20px;
-  background-color: #0a0a0a; /* dark theme background */
+  background-color: #0a0a0a;
+  /* dark theme background */
   color: #fff;
 }
 
@@ -319,13 +325,15 @@ body {
 
 /* Projects Grid */
 .project-tab {
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .project-tab.active {
-  display: grid; /* show active tab's content */
+  display: grid;
+  /* show active tab's content */
 }
 
 /* Project Card */
@@ -333,7 +341,7 @@ body {
   background-color: #121212;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
 

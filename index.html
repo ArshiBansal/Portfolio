@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arshi Bansal | Portfolio</title>
 
   <!-- Bootstrap CSS (external) -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -22,10 +19,16 @@
 
   <!-- Keep original inline style (also included in styles.css) -->
   <style>
-    .section { display: none; }
-    .section.active { display: block; }
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
@@ -78,16 +81,21 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      
+
       <!-- ABOUT SECTION -->
       <section id="about" class="section active">
         <h1>About Me</h1>
         <div class="about-section">
           <p>
-            Currently in my third year of B.Tech, I am actively building skills and experience in the fields of artificial intelligence, machine learning, and data analytics. I focus on developing predictive models and solving real-world problems using Python, Pandas, and SQL. I'm also proficient in using Power BI to design clean and insightful dashboards that visualize complex data with clarity.
+            Currently in my third year of B.Tech, I am actively building skills and experience in the fields of
+            artificial intelligence, machine learning, and data analytics. I focus on developing predictive models and
+            solving real-world problems using Python, Pandas, and SQL. I'm also proficient in using Power BI to design
+            clean and insightful dashboards that visualize complex data with clarity.
           </p>
           <p>
-            I’m developing a strong grasp of frontend web development using HTML, CSS, and JavaScript to bring ideas to life. I’m learning Java to strengthen backend logic and OOP. I value clean structure, thoughtful design, and creativity.
+            I’m developing a strong grasp of frontend web development using HTML, CSS, and JavaScript to bring ideas to
+            life. I’m learning Java to strengthen backend logic and OOP. I value clean structure, thoughtful design, and
+            creativity.
           </p>
         </div>
 
@@ -252,239 +260,199 @@
       </section>
 
       <!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-  <h1 class="section-title">Projects</h1>
+      <section id="projects" class="section">
+        <h1 class="section-title">Projects</h1>
 
-  <!-- Project Category Navigation -->
-  <div class="project-nav">
-    <a href="#" class="project-tab-link active" data-category="java">Java</a>
-    <a href="#" class="project-tab-link" data-category="web">Web</a>
-    <a href="#" class="project-tab-link" data-category="data">Data</a>
-    <a href="#" class="project-tab-link" data-category="ml">ML</a>
-    <a href="#" class="project-tab-link" data-category="python">Python</a>
-  </div>
+        <!-- Project Category Navigation -->
+        <div class="project-nav">
+          <a href="#" class="project-tab-link active" data-category="java">Java</a>
+          <a href="#" class="project-tab-link" data-category="web">Web</a>
+          <a href="#" class="project-tab-link" data-category="data">Data</a>
+          <a href="#" class="project-tab-link" data-category="ml">ML</a>
+          <a href="#" class="project-tab-link" data-category="python">Python</a>
+        </div>
 
-  <!-- Java Projects -->
-  <div class="project-tab active" data-category="java">
-    <div class="project-card">
-      <ion-icon name="desktop-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Expense Manager</h3>
-      <p class="project-description">A Java Swing desktop app for managing expenses with income, categories, and balance tracking.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="construct-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Library Management System</h3>
-      <p class="project-description">Console-based system using Java OOP for managing books and issues.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="calendar-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Task Scheduler</h3>
-      <p class="project-description">Java-based desktop tool for scheduling daily tasks with alert support.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="reader-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Student Info System</h3>
-      <p class="project-description">A Java program to store and manage student records using file handling.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="document-text-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Resume Builder</h3>
-      <p class="project-description">Java GUI app to input user data and generate formatted resumes.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="bug-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Bug Tracker</h3>
-      <p class="project-description">Simple Java app to report, track, and close software bugs in projects.</p>
-    </div>
-  </div>
+        <!-- Java Projects -->
+        <div class="project-tab active" data-category="java">
+          <div class="project-card">
+            <ion-icon name="desktop-outline" class="project-icon"></ion-icon>
+            <h3 class="project-title">DeepFocus App</h3>
+            <p class="project-description">A Java Swing desktop app for 90-minute productivity sessions with task
+              tracking and clean, customizable UI.</p>
+          </div>
+          <div class="project-card">
+            <ion-icon name="construct-outline" class="project-icon"></ion-icon>
+            <h3 class="project-title">ToDoList</h3>
+            <p class="project-description">Organize your tasks your way with a sleek Java Swing desktop manager.</p>
+          </div>
+          <div class="project-card">
+            <ion-icon name="calendar-outline" class="project-icon"></ion-icon>
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-description">A Java Swing-based Expense Tracker to manage income, log expenses, and
+              monitor remaining balance with an intuitive GUI.</p>
+          </div>
+          <div class="project-card">
+            <ion-icon name="reader-outline" class="project-icon"></ion-icon>
+            <h3 class="project-title">Student Info System</h3>
+            <p class="project-description">A Java program to store and manage student records using file handling.</p>
+          </div>
+          <div class="project-card">
+            <ion-icon name="document-text-outline" class="project-icon"></ion-icon>
+            <h3 class="project-title">Resume Builder</h3>
+            <p class="project-description">Java GUI app to input user data and generate formatted resumes.</p>
+          </div>
 
-  <!-- Web Projects -->
-  <div class="project-tab" data-category="web">
-    <div class="project-card">
-      <ion-icon name="code-slash-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Portfolio Website</h3>
-      <p class="project-description">Responsive HTML/CSS/JS portfolio with animated sections and dynamic navigation.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="globe-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">AgriGrow Website</h3>
-      <p class="project-description">Static website for agriculture startup using Flexbox and semantic HTML.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="storefront-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Online Store UI</h3>
-      <p class="project-description">Frontend design of an e-commerce website using Bootstrap and JS.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="images-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Gallery Page</h3>
-      <p class="project-description">Photo gallery web page with modal image previews using JS.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="newspaper-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Blog Layout</h3>
-      <p class="project-description">HTML/CSS based blog layout with article cards and responsive grid.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="list-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">To-Do Web App</h3>
-      <p class="project-description">Simple web-based to-do list with JavaScript for interactivity.</p>
-    </div>
-  </div>
+          <!-- Web Projects -->
+          <div class="project-tab" data-category="web">
+            <div class="project-card">
+              <ion-icon name="code-slash-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">Responsive HTML/CSS/JS portfolio with animated sections and dynamic
+                navigation.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="globe-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">The Tenth Wall</h3>
+              <p class="project-description">a sleek, responsive multi-page interior design website built with HTML,
+                CSS, JavaScript, Bootstrap, and PHP.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="storefront-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Urban Cafe</h3>
+              <p class="project-description">a responsive, multi-page café website with HTML, CSS, Bootstrap,
+                JavaScript, and PHP for interactive login, signup, and orders.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="images-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Gallery Page</h3>
+              <p class="project-description">Photo gallery web page with modal image previews using JS.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="newspaper-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Blog Layout</h3>
+              <p class="project-description">HTML/CSS based blog layout with article cards and responsive grid.</p>
+            </div>
+          </div>
 
-  <!-- Data Analysis Projects -->
-  <div class="project-tab" data-category="data">
-    <div class="project-card">
-      <ion-icon name="analytics-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Sales Dashboard</h3>
-      <p class="project-description">Power BI dashboard analyzing monthly sales trends and performance.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="filter-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">HR Analytics</h3>
-      <p class="project-description">Python-based analysis on employee attrition and productivity.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="cash-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Finance Report</h3>
-      <p class="project-description">Excel and Python used to track revenue, cost, and profit margins.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="bar-chart-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Customer Trends</h3>
-      <p class="project-description">Jupyter-based EDA on customer purchase patterns and behavior.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="stats-chart-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Market Survey</h3>
-      <p class="project-description">Analysis of market research data to discover preferences and gaps.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="color-filter-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Retail Product Analysis</h3>
-      <p class="project-description">Cleaning and analysis of retail data using pandas and seaborn.</p>
-    </div>
-  </div>
+          <!-- Data Analysis Projects -->
+          <div class="project-tab" data-category="data">
+            <div class="project-card">
+              <ion-icon name="analytics-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Indian Crime Analysis</h3>
+              <p class="project-description">An Excel-based dashboard analyzing India’s crime trends (2020–2024) with
+                visualizations to support data-driven public safety insights.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="filter-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Cyber Crime Analysis</h3>
+              <p class="project-description">A Python & Jupyter Notebook dashboard analyzing cybercrime incidents
+                (2019–2024) to reveal trends, sector risks, and actionable insights.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="cash-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Sales Report Dashboard</h3>
+              <p class="project-description">An interactive Power BI dashboard visualizing 2017–2020 retail and
+                warehouse sales to uncover trends, supplier performance, and product insights.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="bar-chart-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Customer Trends</h3>
+              <p class="project-description">Jupyter-based EDA on customer purchase patterns and behavior.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="stats-chart-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Market Survey</h3>
+              <p class="project-description">Analysis of market research data to discover preferences and gaps.</p>
+            </div>
+          </div>
 
-  <!-- Predictive Analysis Projects -->
-  <div class="project-tab" data-category="ml">
-    <div class="project-card">
-      <ion-icon name="sparkles-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Student Performance Predictor</h3>
-      <p class="project-description">Regression model using Scikit-learn to predict student scores based on inputs.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="trending-up-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Loan Approval Prediction</h3>
-      <p class="project-description">Classification model to predict loan approval using logistic regression.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="heart-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Heart Disease Detection</h3>
-      <p class="project-description">ML model to predict heart disease likelihood from medical data.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="cloudy-night-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Weather Forecast</h3>
-      <p class="project-description">Time-series prediction for temperature and rainfall using LSTM.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="school-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Course Recommendation</h3>
-      <p class="project-description">Content-based recommender system using NLP and TF-IDF.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="pulse-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">COVID-19 Spread Modeling</h3>
-      <p class="project-description">Predictive model for COVID-19 case trends using regression analysis.</p>
-    </div>
-  </div>
+          <!-- Predictive Analysis Projects -->
+          <div class="project-tab" data-category="ml">
+            <div class="project-card">
+              <ion-icon name="sparkles-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Anime Recommendation & Analytics</h3>
+              <p class="project-description">An end-to-end system analyzing anime trends, predicting popularity with
+                machine learning, and visualizing insights via Streamlit, SQL, and Power BI.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="trending-up-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Red Wine Quality Predictor & Analytics</h3>
+              <p class="project-description">Streamlit app for analyzing and predicting red wine quality with
+                interactive visualizations and machine learning insights.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="heart-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Heart Disease Detection</h3>
+              <p class="project-description">ML model to predict heart disease likelihood from medical data.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="cloudy-night-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Weather Forecast</h3>
+              <p class="project-description">Time-series prediction for temperature and rainfall using LSTM.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="school-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Course Recommendation</h3>
+              <p class="project-description">Content-based recommender system using NLP and TF-IDF.</p>
+            </div>
+          </div>
 
-  <!-- Python Development Projects -->
-  <div class="project-tab" data-category="python">
-    <div class="project-card">
-      <ion-icon name="terminal-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">File Organizer</h3>
-      <p class="project-description">Python script to automatically sort files in a directory by type and date.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="chatbubbles-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Chatbot Application</h3>
-      <p class="project-description">Simple chatbot using Python and NLTK for natural language processing.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="game-controller-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Tic-Tac-Toe Game</h3>
-      <p class="project-description">Interactive console-based Tic-Tac-Toe game with AI opponent using Python.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="lock-closed-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Password Generator</h3>
-      <p class="project-description">Python tool to create secure, customizable passwords with random characters.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="image-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Image Processor</h3>
-      <p class="project-description">Python app using Pillow to resize, filter, and convert image formats.</p>
-    </div>
-    <div class="project-card">
-      <ion-icon name="globe-outline" class="project-icon"></ion-icon>
-      <h3 class="project-title">Web Scraper</h3>
-      <p class="project-description">Python script using BeautifulSoup to extract data from websites.</p>
-    </div>
-  </div>
-</section>
+          <!-- Python Development Projects -->
+          <div class="project-tab" data-category="python">
+            <div class="project-card">
+              <ion-icon name="terminal-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Page Replacement Simulator</h3>
+              <p class="project-description">A Python Tkinter simulator demonstrating OS concepts of FIFO, LRU, and
+                Optimal page replacement algorithms with interactive visualizations.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="chatbubbles-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">ML Predictive Analysis and Data Analysis</h3>
+              <p class="project-description">Creating Analysis or Predictions using ML Algorithms .</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="lock-closed-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Password Generator</h3>
+              <p class="project-description">Python tool to create secure, customizable passwords with random
+                characters.</p>
+            </div>
+            <div class="project-card">
+              <ion-icon name="globe-outline" class="project-icon"></ion-icon>
+              <h3 class="project-title">Web Scraper</h3>
+              <p class="project-description">Python script using BeautifulSoup to extract data from websites.</p>
+            </div>
+          </div>
+      </section>
 
       <!-- CONTACT -->
       <section id="contact" class="section">
         <h3 class="h3 form-title">Contact Form</h3>
-        
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-        
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-        
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-        
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
+
+        <form action="#" class="form" data-form>
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+          </div>
+
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+        </form>
       </section>
     </main>
   </div>
 
   <!-- Bootstrap JS (external) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 
   <!-- External JS -->
   <script src="script.js"></script>
 </body>
+
 </html>
